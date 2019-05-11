@@ -396,5 +396,10 @@
   </section>
   <script src="app.js"></script>
 </body>
+<script>
+  if (navigator.serviceWorker) {
+    navigator.serviceWorker.register("serviceworker.js")
+  }
+</script>
 
 </html>
