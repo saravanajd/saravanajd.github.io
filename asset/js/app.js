@@ -22,6 +22,12 @@ menuList.forEach(item => {
   });
 });
 
+document.getElementById("btnContact").addEventListener("click", function(e) {
+    e.preventDefault;
+    const scrollToElement = document.getElementById("contact").offsetTop;
+    scrollTo({ top: scrollToElement-100, behavior: 'smooth'});
+  });
+
 
 // get closest element
 const closest = (el, fn) => {
